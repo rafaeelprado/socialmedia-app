@@ -46,3 +46,7 @@
   background: transparent;
   border: 2px solid var(--purple);
 }
+
+::-webkit-scrollbar{
+  display: none;
+}

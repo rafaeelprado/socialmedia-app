@@ -12,20 +12,20 @@ const ProfileCard = () => {
             <img src={Profile} alt="" />
         </div>
         <div className="ProfileName">
-            <span>Rafael Prado</span>
-            <span>Front-end Developer</span>
+            <span>Scarlett Johansson</span>
+            <span>Actress</span>
         </div>
         <div className="followStatus">
             <hr/>
             <div>
                 <div className="follow">
-                    <span>6,890</span>
+                    <span>6.3M</span>
                     <span>Followers</span>
                 </div>
                 <div className="vl"></div>
                 <div className="follow"></div>
                 <div className="follow">
-                    <span>1</span>
+                    <span>47</span>
                     <span>Following</span>
                 </div>
             </div> 
