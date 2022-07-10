@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../../img/logo.svg'
-import UilSearch from '@iconscout/react-unicons/icons/uil-search'
+import { GoSearch } from "react-icons/go";
 import './LogoSearch.css'
 
 const LogoSearch = () => {
@@ -10,7 +10,7 @@ const LogoSearch = () => {
         <div className="Search">
             <input type="text" placeholder="#Explore"/>
             <div className="s-icon">
-                <UilSearch/>
+                <GoSearch />
                 </div>
         </div>
     </div>

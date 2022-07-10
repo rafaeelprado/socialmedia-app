@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './RightSide.css'
 import Home from "../../img/home.png";
-import Noti from "../../img/noti.png";
 import Comment from "../../img/comment.png";
 import { HiOutlineBell } from "react-icons/hi";
 import { FiSettings } from "react-icons/fi";
