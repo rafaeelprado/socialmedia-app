@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useState } from "react";
 import './InfoCard.css'
 import { MdOutlineEdit } from 'react-icons/md';
+import ProfileModal from "../ProfileModal/ProfileModal";
 
-const InfoCard = () => {
-  return (
-  <div className="InfoCard">
-    <div className="InfoHead">
-    <h4>Your Info</h4>    
-    <div>
-      <MdOutlineEdit size="1.2rem"/>
-    </div>
-    </div>
-
-    <div className="info">
+  const InfoCard = () => {
+    const [modalOpened, setModalOpened] = useState(false);
+    return (
+      <div className="InfoCard">
+        <div className="InfoHead">
+          <h4>Your Info</h4>
+          <div>
+            <MdOutlineEdit
+              width="2.5rem"
+              height="1.7rem"
+              size="1.4rem"
+              onClick={() => setModalOpened(true)}              
+            />
+            <ProfileModal
+              modalOpened={modalOpened}
+              setModalOpened={setModalOpened}
+            />
+          </div>
+        </div>
+  
+        <div className="info">
       <span>
         <b>Status </b>
       </span>
@@ -41,8 +52,8 @@ const InfoCard = () => {
 
     <button className="button logout-button">Logout</button>
 
-  </div>  
-  )
-}
-
-export default InfoCard
+  </div> 
+    );
+  };
+  
+  export default InfoCard;
