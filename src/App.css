@@ -26,7 +26,7 @@
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #f8c2c2;
+  background: #e6e4ff;
   filter: blur(72px);
 }
 .button{
@@ -45,6 +45,11 @@
   color: var(--purple);
   background: transparent;
   border: 2px solid var(--purple);
+}
+
+.button:disabled{
+  background: silver;
+  pointer-events: none;
 }
 
 ::-webkit-scrollbar{

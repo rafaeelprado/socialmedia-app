@@ -8,16 +8,14 @@ import './Profile.css'
 const Profile = () => {
   return (
     <div className="Profile">
-      <ProfileLeft/>
-
+      <ProfileLeft />
       <div className="Profile-center">
-        <ProfileCard/>
-        <PostSide/>
+        <ProfileCard location = 'profilePage'/>
+      <PostSide/>
       </div>
-
       <RightSide/>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
